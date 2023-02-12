@@ -1,17 +1,29 @@
-// let mapwidth = 5000;
-// let mapheight = 5000;
-// let xpos = 400;
-// let ypos = 400;
-// let x = clientX;
-// let y = clientY;
+document.documentElement.style.cursor =
+  'url("http://sstatic.net/stackoverflow/img/favicon.ico"), auto';
+var caseList = ["progetto.html", "progetto-1.html", "progetto-2.html"];
 
-// $(document).ready(function () {
-//   $(this).scrollTo(mapwidth / 2, mapheight / 2);
-// });
+current = $(location)
+  .attr("pathname")
+  .substr($(location).attr("pathname").lastIndexOf("/") + 1); // get current page: just last part - page name and extension
+if ($.inArray(current, caseList) !== -1) {
+  //check if it is in array
+  index = $.inArray(current, caseList);
+}
 
-// object.onmousemove = function () {
-//   window.scrollX(x + 400);
-//   window.scrollY(y + 400);
-// };
+function next() {
+  console.log("next");
+  if (index < caseList.length - 1) {
+    next = caseList[index + 1];
+    window.location.href = next;
+    console.log("+");
+  }
+}
 
-
+function prev() {
+  console.log("prev");
+  if (index >= 0 + 1) {
+    prev = caseList[index - 1];
+    window.location.href = prev;
+    console.log("-");
+  }
+}
