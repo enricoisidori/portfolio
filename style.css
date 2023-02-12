@@ -1,0 +1,40 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+body {
+  margin: 0;
+  /* width: 5000px; */
+  height: 5000px;
+  background-color: grey;
+}
+
+#topnav {
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+}
+
+.btn {
+  padding: 5px;
+}
+
+.left {
+  float: left;
+  text-align: left;
+}
+
+.right {
+  float: right;
+  text-align: right;
+}
+
+/* #center {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 2500px;
+  left: 2500px;
+  background-color: pink;
+} */
