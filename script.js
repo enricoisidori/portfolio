@@ -1,5 +1,4 @@
-// document.documentElement.style.cursor =
-//   'url("http://sstatic.net/stackoverflow/img/favicon.ico"), auto';
+document.documentElement.style.cursor = 'url("./asset/svg/dot.svg"), auto';
 var caseList = ["progetto.html", "progetto-1.html", "progetto-2.html"];
 
 current = $(location)
@@ -27,6 +26,13 @@ function prev() {
     console.log("-");
   }
 }
+
+// $(document).ready(function () {
+//   $(document).mousemove(function (e) {
+//     var cpos = { top: e.pageY, left: e.pageX };
+//     $("#besideMouse").offset(cpos);
+//   });
+// });
 
 // function mobilecheck() {
 //   let check = false;

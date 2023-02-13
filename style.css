@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+#besideMouse {
+  pointer-events: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
 }
@@ -19,6 +29,14 @@ div {
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 .gallery {
@@ -155,11 +173,11 @@ p {
   height: 10px;
 }
 
-.video-desktop {
+#video-desktop {
   display: block;
 }
 
-.video-mobile {
+#video-mobile {
   display: none;
 }
 
@@ -169,11 +187,11 @@ p {
     width: 100%;
   }
 
-  .video-desktop {
+  .desktop {
     display: none;
   }
 
-  .video-mobile {
+  .mobile {
     display: block;
   }
 
