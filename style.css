@@ -24,7 +24,6 @@ div {
 }
 
 .container {
-  height: 600px;
   float: left;
   white-space: nowrap;
   overflow-x: auto;
@@ -39,9 +38,20 @@ div {
   display: none;
 }
 
+.normal {
+  height: 600px;
+}
+
+.medium {
+  height: 400px;
+}
+
+.small {
+  height: 200px;
+}
+
 .gallery {
   white-space: nowrap;
-  height: 600px;
 }
 
 a {
@@ -199,7 +209,13 @@ p {
     height: 200px;
   }
 
-  .gallery {
-    height: 200px;
+  [class*="gallery"] {
+    white-space: nowrap;
+    height: 200px !important;
+  }
+
+  .fit {
+    height: auto !important;
+    width: 80% !important;
   }
 }
