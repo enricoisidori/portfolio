@@ -1,29 +1,52 @@
 document.documentElement.style.cursor = 'url("./asset/svg/dot.svg"), auto';
-var caseList = ["progetto.html", "progetto-1.html", "progetto-2.html"];
 
-current = $(location)
-  .attr("pathname")
-  .substr($(location).attr("pathname").lastIndexOf("/") + 1); // get current page: just last part - page name and extension
-if ($.inArray(current, caseList) !== -1) {
-  //check if it is in array
-  index = $.inArray(current, caseList);
-}
+//CAMBIA PAGINA IN AUTOMATICO
+// var caseList = ["progetto.html", "progetto-1.html", "progetto-2.html"];
+// current = $(location)
+//   .attr("pathname")
+//   .substr($(location).attr("pathname").lastIndexOf("/") + 1); // get current page: just last part - page name and extension
+// if ($.inArray(current, caseList) !== -1) {
+//   //check if it is in array
+//   index = $.inArray(current, caseList);
+// }
 
-function next() {
-  console.log("next");
-  if (index < caseList.length - 1) {
-    next = caseList[index + 1];
-    window.location.href = next;
-    console.log("+");
-  }
-}
+// function next() {
+//   console.log("next");
+//   if (index < caseList.length - 1) {
+//     next = caseList[index + 1];
+//     window.location.href = next;
+//     console.log("+");
+//   }
+// }
 
-function prev() {
-  console.log("prev");
-  if (index >= 0 + 1) {
-    prev = caseList[index - 1];
-    window.location.href = prev;
-    console.log("-");
+// function prev() {
+//   console.log("prev");
+//   if (index >= 0 + 1) {
+//     prev = caseList[index - 1];
+//     window.location.href = prev;
+//     console.log("-");
+//   }
+// }
+
+let language = "eng";
+
+function changelang() {
+  console.log("attiva");
+  let langbtn = document.querySelectorAll(".lang").length;
+  if (language == "eng") {
+    for (i = 0; i < langbtn; i++) {
+      document.getElementsByClassName("ita")[i].style.display = "block";
+      document.getElementsByClassName("eng")[i].style.display = "none";
+      language = "ita";
+      document.getElementsByClassName("lang")[i].innerHTML = "ENG";
+    }
+  } else if (language == "ita") {
+    for (i = 0; i < langbtn; i++) {
+      document.getElementsByClassName("ita")[i].style.display = "none";
+      document.getElementsByClassName("eng")[i].style.display = "block";
+      language = "eng";
+      document.getElementsByClassName("lang")[i].innerHTML = "ITA";
+    }
   }
 }
 

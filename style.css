@@ -10,9 +10,14 @@
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: content-box;
+  -moz-text-size-adjust: content-box;
+  -ms-text-size-adjust: content-box;
+
+  width: auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 body {
@@ -36,6 +41,10 @@ div {
 
 .mobile {
   display: none;
+}
+
+.lang {
+  text-decoration: underline;
 }
 
 .normal {
@@ -115,6 +124,20 @@ p {
   float: left;
   padding: 5px;
   width: 33.33%;
+  text-align: right;
+}
+
+.topleft {
+  float: left;
+  padding: 5px;
+  width: 50%;
+  text-align: left;
+}
+
+.topright {
+  float: left;
+  padding: 5px;
+  width: 50%;
   text-align: right;
 }
 
@@ -217,5 +240,17 @@ p {
   .fit {
     height: auto !important;
     width: 80% !important;
+  }
+
+  .eng {
+    display: block;
+  }
+
+  .ita {
+    display: none;
+  }
+
+  .rightmobile {
+    width: 66.66% !important;
   }
 }
