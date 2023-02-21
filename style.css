@@ -35,6 +35,14 @@ div {
   overflow-y: hidden;
 }
 
+.container-fit {
+  float: left;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100%;
+}
+
 .desktop {
   display: block;
 }
