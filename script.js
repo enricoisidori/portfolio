@@ -1,4 +1,4 @@
-document.documentElement.style.cursor = 'url("./asset/svg/dot.svg"), auto';
+// document.documentElement.style.cursor = 'url("./asset/svg/dot.svg"), auto';
 
 //CAMBIA PAGINA IN AUTOMATICO
 // var caseList = ["progetto.html", "progetto-1.html", "progetto-2.html"];
@@ -88,3 +88,15 @@ function changelang() {
 //   mobilecheck();
 //   iframe();
 // }
+
+// UPDATE: I was able to get this working again... Enjoy!
+
+// var cursorinner = document.querySelector(".cursor2");
+// var a = document.querySelectorAll("a");
+
+// document.addEventListener("mousemove", function (e) {
+//   var x = e.clientX;
+//   var y = e.clientY;
+//   cursorinner.style.left = x + "px";
+//   cursorinner.style.top = y + "px";
+// });
