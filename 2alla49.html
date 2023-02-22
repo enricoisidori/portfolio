@@ -16,8 +16,6 @@
       type="image/svg+xml"
       href="./diverso/icon2alla49.svg"
     />
-
-    <title></title>
   </head>
   <body onclick="history.go(0)" onkeydown="history.go(0)">
     <p id="click"></p>
@@ -26,7 +24,7 @@
     </p> -->
     <table id="table"></table>
 
-    <div id="name"></div>
+    <div id="name">562.949.953.421.312<sup>esima</sup> di 2<sup>49</sup></div>
   </body>
   <style>
     body {
@@ -37,7 +35,7 @@
     * {
       margin: 0;
       box-sizing: border-box;
-      cursor: pointer;
+      /* cursor: pointer; */
     }
 
     table {
@@ -63,14 +61,11 @@
       text-align: center;
       letter-spacing: 0.5pt;
       font-family: Garamond, serif;
-      font-style: italic;
+      font-style: normal;
       margin-left: auto;
       margin-right: auto;
       margin-top: 30px;
       background-color: white;
-    }
-
-    #besideMouse {
     }
 
     #click {
@@ -108,7 +103,7 @@
         text-align: center;
         letter-spacing: 0.1pt;
         font-family: Garamond, serif;
-        font-style: italic;
+        font-style: normal;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -144,14 +139,6 @@
     var num = Math.floor(rand * pos) + 1;
 
     document.getElementById("name").innerHTML =
-      num.toLocaleString("it") + "<sup> esima</sup> di 2<sup> 49</sup>";
-
-    // document.addEventListener("mousemove", function (e) {
-    //   let circle = document.getElementById("besideMouse");
-    //   let left = e.offsetX;
-    //   let top = e.offsetY;
-    //   circle.style.left = left + "px";
-    //   circle.style.top = top + "px";
-    // });
+      num.toLocaleString("it") + "<sup>esima</sup> di 2<sup>49</sup>";
   </script>
 </html>
