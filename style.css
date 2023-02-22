@@ -4,7 +4,7 @@
   line-height: 18px;
   box-sizing: border-box;
   /* cursor: none !important; */
-  cursor: url("./asset/svg/dot.svg") !important;
+  /* cursor: url("./asset/svg/dot.svg") !important; */
 }
 
 html {
