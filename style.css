@@ -26,6 +26,10 @@ div {
   margin: 0;
 }
 
+#nonhovera:hover {
+  opacity: 100% !important;
+}
+
 .container {
   float: left;
   white-space: nowrap;
