@@ -33,6 +33,12 @@ div {
   overflow-y: hidden;
 }
 
+.container-verical {
+  float: left;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
 .container-fit {
   float: left;
   white-space: nowrap;
